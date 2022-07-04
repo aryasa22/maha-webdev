@@ -50,6 +50,27 @@
   position: relative;
 }
 
+.input label {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  pointer-events: none;
+  cursor: text;
+  background: #293038;
+}
+
+.textarea label {
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+  pointer-events: none;
+  cursor: text;
+  transition: 0.3s;
+  background: #293038;
+}
+
 .input input,
 .textarea textarea {
   position: absolute;
@@ -63,12 +84,31 @@
   font-size: 1rem;
   padding: 0 1rem;
   outline: none;
+  color: #fff;
 }
 
 .textarea textarea {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-family: inherit;
+}
+
+.contact-input:focus ~ .contact-label,
+.contact-input:not(:placeholder-shown).contact-input:not(:focus)
+  ~ .contact-label {
+  top: -0.1rem;
+  left: 0.5rem;
+  font-size: 0.7rem;
+  padding: 0 5px;
+}
+
+.contact-textarea:focus ~ .textarea-label,
+.contact-textarea:not(:placeholder-shown).contact-textarea:not(:focus)
+  ~ .textarea-label {
+  top: -0.5rem;
+  left: 0.5rem;
+  font-size: 0.7rem;
+  padding: 0 5px;
 }
 
 .kirim-btn {
@@ -83,9 +123,18 @@
 
 /* Media Queries */
 @media (max-width: 768px) {
+  #contact-main-section {
+    background-image: url("../images/bg-home-mobile.jpg");
+  }
+
   .contact-form-card {
     background: rgba(41, 48, 56, 0.9);
     width: 100%;
     padding: 2rem;
+  }
+
+  .textarea label,
+  .input label {
+    background: #293038e6;
   }
 }
