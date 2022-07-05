@@ -119,14 +119,41 @@
   border: none;
   border-radius: 0.5rem;
   padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.contact-socials {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.social-title {
+  margin-bottom: 0.5rem;
+}
+
+.form-link {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 0.5rem;
+}
+
+.form-link i {
+  font-size: 1rem;
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   #contact-main-section {
     background-image: url("../images/bg-home-mobile.jpg");
   }
+}
 
+@media (max-width: 768px) {
   .contact-form-card {
     background: rgba(41, 48, 56, 0.9);
     width: 100%;

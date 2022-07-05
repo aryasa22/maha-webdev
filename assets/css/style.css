@@ -186,7 +186,7 @@ a {
 .footer-socials {
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .social-link {
@@ -267,15 +267,37 @@ a {
   opacity: 0;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-  .container {
-    padding: 0 1rem;
-  }
+.no-scroll {
+  overflow: hidden;
+}
 
+/* Media Queries */
+
+@media (max-width: 960px) {
   #main-section {
     background-image: url("../images/bg-home-mobile.jpg");
     background-color: rgba(10, 4, 32, 0.8);
+  }
+
+  .intro {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro-button {
+    align-self: center;
+  }
+
+  #selling-point {
+    padding: 5rem 2rem;
+    padding-bottom: 15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
   }
 
   .main-nav {
@@ -298,12 +320,6 @@ a {
     height: 2rem;
   }
 
-  .intro {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
-
   .intro-title {
     font-size: 2.5rem;
   }
@@ -313,13 +329,11 @@ a {
   }
 
   .intro-button {
-    align-self: center;
     font-size: 0.7rem;
     padding: 0.5rem 1rem;
   }
 
   #selling-point {
-    padding: 5rem 2rem;
     padding-bottom: 10rem;
     grid-template-columns: 1fr;
   }

@@ -36,11 +36,13 @@
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   #about-main-section {
     background-image: url("../images/bg-home-mobile.jpg");
   }
+}
 
+@media (max-width: 768px) {
   .about-text-card {
     position: inherit;
     width: 100%;

@@ -96,11 +96,13 @@ body {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   #projects-main-section {
     background-image: url("../images/bg-secondary-mobile.png");
   }
+}
 
+@media (max-width: 768px) {
   .projects-intro-btn {
     font-size: 0.8rem;
     padding: 0.5rem 1rem;

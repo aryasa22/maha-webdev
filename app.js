@@ -7,6 +7,7 @@ burger.addEventListener("click", () => {
   burger.classList.toggle("toggle");
   mobileNav.classList.toggle("nav-appear");
   intro.classList.toggle("invisible");
+  document.body.classList.toggle("no-scroll");
 });
 
 // GSAP Animation
